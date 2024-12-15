@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit News</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #e0f7fa; /* Light teal background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f7fa;
             margin: 0;
             padding: 0;
         }
@@ -34,6 +35,7 @@
         nav ul li a {
             color: white;
             text-decoration: none;
+            font-weight: bold;
         }
 
         .container {
@@ -54,16 +56,6 @@
 
         .form-group label {
             font-weight: bold;
-        }
-
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-        }
-
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #004085;
         }
 
         .header-title {
@@ -101,7 +93,7 @@
     </header>
     <main class="container">
         <h2 class="text-center mb-4">Submit Your News Article</h2>
-        <form action="https://formspree.io/f/mpwzegoo" method="POST"> <!-- Insert your Formspree endpoint URL here -->
+        <form action="https://formspree.io/f/your-form-endpoint" method="POST"> <!-- Insert your Formspree endpoint URL here -->
             <div class="form-group">
                 <label for="title">News Title</label>
                 <input type="text" class="form-control" id="title" name="title" placeholder="Enter the title of your news article" required>
